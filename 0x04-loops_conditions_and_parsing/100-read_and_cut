@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#get the User name, user id and the shell path
+while true; do
+    cut -d: -f1,3,6 /etc/passwd
+    break
+done
