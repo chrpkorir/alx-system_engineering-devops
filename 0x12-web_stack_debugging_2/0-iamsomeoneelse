@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script to run the command who I am
+if [ $# -eq 0 ]
+then
+	whoami
+else
+	sudo -u "$1" whoami
+fi
