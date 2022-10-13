@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script displays the message infinity 
+#+ and beyond for eternity unless it's killed.
+
+while true;
+do
+	echo "To infinity and beyond";
+	sleep 2
+done	 

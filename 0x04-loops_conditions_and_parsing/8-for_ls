@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Bash script that displays content of directory
+for i in *
+     do echo "$i"|cut -d- -f2; done
