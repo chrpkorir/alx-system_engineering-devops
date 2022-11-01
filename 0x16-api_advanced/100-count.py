@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """
 Recursive function that queries the Reddit API,
-parses the title of all hot articles, and prints 
+parses the title of all hot articles, and prints
 a sorted count of given keywords (case-insensitive,
 delimited by spaces.
 """
 
 import requests
+
 
 def count_words(subreddit, word_list, after=None, count={}):
     ''' '''
@@ -26,7 +27,7 @@ def count_words(subreddit, word_list, after=None, count={}):
                                allow_redirects=False)
     try:
         data = hot_requests.json().get("data")
-    except:
+    except Exception:
         return
     for word in word_list:
         if word not in count.keys():
